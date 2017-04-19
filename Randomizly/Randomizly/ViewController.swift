@@ -11,12 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var randomNumberLabel: UILabel!
+    var number = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let number = 10
-        self.randomNumberLabel.text = "\(number)"
+        self.randomNumberLabel.text = "\(self.number)"
     }
 
 }
