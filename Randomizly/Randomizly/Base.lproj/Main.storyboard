@@ -35,7 +35,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="randomNumberLabel" destination="5n5-jX-Cmh" id="pkK-7a-i4p"/>
+                        <outlet property="randomNumberLabel" destination="GSY-SO-Dnf" id="Gam-da-aMf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

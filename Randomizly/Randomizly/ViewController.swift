@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var randomNumberLabel: UILabel!
+    
     var number = 10
     
     override func viewDidLoad() {
