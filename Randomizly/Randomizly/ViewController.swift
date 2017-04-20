@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var randomNumberLabel: UILabel!
+    @IBAction func newRandomNumber(_ sender: Any) {
+    }
     
     var number = 10
     

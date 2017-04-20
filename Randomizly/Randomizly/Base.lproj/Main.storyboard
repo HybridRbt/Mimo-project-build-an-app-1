@@ -27,10 +27,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb2-ED-DpL">
+                                <rect key="frame" x="148" y="352" width="79" height="30"/>
+                                <state key="normal" title="Regenerate"/>
+                                <connections>
+                                    <action selector="newRandomNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUb-7o-3my"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GSY-SO-Dnf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5n5-jX-Cmh"/>
+                            <constraint firstItem="fb2-ED-DpL" firstAttribute="top" secondItem="GSY-SO-Dnf" secondAttribute="bottom" constant="8" id="MfV-2A-qnR"/>
+                            <constraint firstItem="fb2-ED-DpL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YQL-vA-xun"/>
                             <constraint firstItem="GSY-SO-Dnf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uSV-Ys-n49"/>
                         </constraints>
                     </view>
