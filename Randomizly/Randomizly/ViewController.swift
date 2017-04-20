@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.number = Int(arc4random_uniform(6)) + 1
+        
         self.randomNumberLabel.text = "\(self.number)"
     }
 
