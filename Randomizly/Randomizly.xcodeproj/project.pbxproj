@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A1690EFF1EAA783B0054A955 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1690EFE1EAA783B0054A955 /* GameViewController.swift */; };
 		A1827A161EA7F0AC00809B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1827A151EA7F0AC00809B99 /* AppDelegate.swift */; };
-		A1827A181EA7F0AC00809B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1827A171EA7F0AC00809B99 /* ViewController.swift */; };
+		A1827A181EA7F0AC00809B99 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1827A171EA7F0AC00809B99 /* MenuViewController.swift */; };
 		A1827A1B1EA7F0AC00809B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1827A191EA7F0AC00809B99 /* Main.storyboard */; };
 		A1827A1E1EA7F0AC00809B99 /* Randomizly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1827A1C1EA7F0AC00809B99 /* Randomizly.xcdatamodeld */; };
 		A1827A201EA7F0AC00809B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1827A1F1EA7F0AC00809B99 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		A1690EFE1EAA783B0054A955 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A1827A121EA7F0AC00809B99 /* Randomizly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1827A151EA7F0AC00809B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1827A171EA7F0AC00809B99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1827A171EA7F0AC00809B99 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A1827A1A1EA7F0AC00809B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1827A1D1EA7F0AC00809B99 /* Randomizly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Randomizly.xcdatamodel; sourceTree = "<group>"; };
 		A1827A1F1EA7F0AC00809B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				A1827A151EA7F0AC00809B99 /* AppDelegate.swift */,
-				A1827A171EA7F0AC00809B99 /* ViewController.swift */,
+				A1827A171EA7F0AC00809B99 /* MenuViewController.swift */,
 				A1827A191EA7F0AC00809B99 /* Main.storyboard */,
 				A1690EFE1EAA783B0054A955 /* GameViewController.swift */,
 				A1827A1F1EA7F0AC00809B99 /* Assets.xcassets */,
@@ -144,7 +144,7 @@
 			files = (
 				A1690EFF1EAA783B0054A955 /* GameViewController.swift in Sources */,
 				A1827A1E1EA7F0AC00809B99 /* Randomizly.xcdatamodeld in Sources */,
-				A1827A181EA7F0AC00809B99 /* ViewController.swift in Sources */,
+				A1827A181EA7F0AC00809B99 /* MenuViewController.swift in Sources */,
 				A1827A161EA7F0AC00809B99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
