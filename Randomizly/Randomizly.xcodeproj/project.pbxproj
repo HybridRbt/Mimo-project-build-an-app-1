@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1690EFF1EAA783B0054A955 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1690EFE1EAA783B0054A955 /* GameViewController.swift */; };
 		A1827A161EA7F0AC00809B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1827A151EA7F0AC00809B99 /* AppDelegate.swift */; };
 		A1827A181EA7F0AC00809B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1827A171EA7F0AC00809B99 /* ViewController.swift */; };
 		A1827A1B1EA7F0AC00809B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1827A191EA7F0AC00809B99 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1690EFE1EAA783B0054A955 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A1827A121EA7F0AC00809B99 /* Randomizly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1827A151EA7F0AC00809B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1827A171EA7F0AC00809B99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A1827A151EA7F0AC00809B99 /* AppDelegate.swift */,
 				A1827A171EA7F0AC00809B99 /* ViewController.swift */,
 				A1827A191EA7F0AC00809B99 /* Main.storyboard */,
+				A1690EFE1EAA783B0054A955 /* GameViewController.swift */,
 				A1827A1F1EA7F0AC00809B99 /* Assets.xcassets */,
 				A1827A211EA7F0AC00809B99 /* LaunchScreen.storyboard */,
 				A1827A241EA7F0AC00809B99 /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1690EFF1EAA783B0054A955 /* GameViewController.swift in Sources */,
 				A1827A1E1EA7F0AC00809B99 /* Randomizly.xcdatamodeld in Sources */,
 				A1827A181EA7F0AC00809B99 /* ViewController.swift in Sources */,
 				A1827A161EA7F0AC00809B99 /* AppDelegate.swift in Sources */,
@@ -305,6 +309,7 @@
 				A1827A291EA7F0AC00809B99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
