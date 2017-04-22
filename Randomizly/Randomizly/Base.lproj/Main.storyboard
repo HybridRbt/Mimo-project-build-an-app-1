@@ -20,8 +20,36 @@
                     <view key="view" contentMode="scaleToFill" id="t5u-md-bPs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEi-cW-lzq">
+                                <rect key="frame" x="166" y="318" width="43" height="30"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="guess:" destination="8S9-Hz-2uZ" eventType="touchUpInside" id="Swm-sH-7NG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dap-af-ilg">
+                                <rect key="frame" x="139" y="280" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2BD-AW-aDg"/>
+                                    <constraint firstAttribute="width" constant="97" id="LpL-BU-jui"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KEi-cW-lzq" firstAttribute="top" secondItem="dap-af-ilg" secondAttribute="bottom" constant="8" id="f3m-rY-MzV"/>
+                            <constraint firstItem="dap-af-ilg" firstAttribute="centerX" secondItem="t5u-md-bPs" secondAttribute="centerX" id="ond-vU-BIV"/>
+                            <constraint firstItem="KEi-cW-lzq" firstAttribute="centerX" secondItem="t5u-md-bPs" secondAttribute="centerX" id="ouF-08-iec"/>
+                            <constraint firstItem="KEi-cW-lzq" firstAttribute="centerY" secondItem="t5u-md-bPs" secondAttribute="centerY" id="s2m-dw-MV1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="dap-af-ilg" id="vQy-Vb-O3Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imV-Eg-GyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
