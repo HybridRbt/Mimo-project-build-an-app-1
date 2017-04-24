@@ -18,15 +18,15 @@ class GameViewController: UIViewController {
             print("Correct: \(correct), tries: \(tries)")
         } else {
             print("No input")
-            self.showAlert()
+            self.showAlert(title: "Error", message: "Please enter a number!")
         }
     
     }
     
     let model = RandomizlyModel()
     
-    func showAlert() {
-        let alertController = UIAlertController(title: "Error", message: "Please enter a number!", preferredStyle: .alert)
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         
         alertController.addAction(defaultAction)
