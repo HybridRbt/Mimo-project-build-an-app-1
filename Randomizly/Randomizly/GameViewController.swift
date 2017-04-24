@@ -14,7 +14,8 @@ class GameViewController: UIViewController {
     @IBAction func guess(_ sender: Any) {
         if let input = self.inputField.text, let number = Int(input) {
             let correct = self.model.guess(number)
-            print("Input: \(number), correct: \(correct)")
+            let tries = self.model.tries
+            print("Correct: \(correct), tries: \(tries)")
         } else {
             print("No input")
             self.showAlert()
