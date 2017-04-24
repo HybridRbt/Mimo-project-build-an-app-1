@@ -15,6 +15,9 @@ class GameViewController: UIViewController {
         if let input = self.inputField.text, let number = Int(input) {
             let correct = self.model.guess(number)
             let tries = self.model.tries
+            if correct == true {
+                self.showAlert(title: "Victory!", message: "You guessed the number correctly! Tries needed: \(tries)")
+            }
             print("Correct: \(correct), tries: \(tries)")
         } else {
             print("No input")
