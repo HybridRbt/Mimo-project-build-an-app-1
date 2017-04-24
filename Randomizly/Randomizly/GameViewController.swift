@@ -20,13 +20,13 @@ class GameViewController: UIViewController {
             switch result {
             case .correct:
                 self.showAlert(title: "Victory!", message: "You guessed the number correctly! Tries needed: \(tries)")
+                self.hintLabel.isHidden = true
             case .tooHigh:
                 self.hintLabel.text = "Lower!"
+                self.hintLabel.isHidden = false
             case .tooLow:
                 self.hintLabel.text = "Higher!"
-            }
-            if result == .correct {
-                
+                self.hintLabel.isHidden = false
             }
             print("Result: \(result), tries: \(tries)")
         } else {
@@ -34,6 +34,11 @@ class GameViewController: UIViewController {
             self.showAlert(title: "Error", message: "Please enter a number!")
         }
     
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hintLabel.isHidden = true
     }
     
     let model = RandomizlyModel()
