@@ -9,7 +9,7 @@
 import Foundation
 
 class RandomizlyModel {
-    var number = 0
+    private var number = 0
     
     init() {
         self.newNumber()
