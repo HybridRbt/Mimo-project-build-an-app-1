@@ -38,6 +38,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2F-it-QLu">
+                                <rect key="frame" x="167" y="251" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -45,9 +51,12 @@
                             <constraint firstItem="dap-af-ilg" firstAttribute="centerX" secondItem="t5u-md-bPs" secondAttribute="centerX" id="ond-vU-BIV"/>
                             <constraint firstItem="KEi-cW-lzq" firstAttribute="centerX" secondItem="t5u-md-bPs" secondAttribute="centerX" id="ouF-08-iec"/>
                             <constraint firstItem="KEi-cW-lzq" firstAttribute="centerY" secondItem="t5u-md-bPs" secondAttribute="centerY" id="s2m-dw-MV1"/>
+                            <constraint firstItem="E2F-it-QLu" firstAttribute="centerX" secondItem="t5u-md-bPs" secondAttribute="centerX" id="sCv-pr-iW2"/>
+                            <constraint firstItem="dap-af-ilg" firstAttribute="top" secondItem="E2F-it-QLu" secondAttribute="bottom" constant="8" id="xD3-ZZ-pEi"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="hintLabel" destination="E2F-it-QLu" id="qbZ-7s-GIr"/>
                         <outlet property="inputField" destination="dap-af-ilg" id="vQy-Vb-O3Z"/>
                     </connections>
                 </viewController>
@@ -68,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb2-ED-DpL">
-                                <rect key="frame" x="171" y="351.5" width="34" height="30"/>
+                                <rect key="frame" x="171" y="352" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <segue destination="8S9-Hz-2uZ" kind="show" id="pJ3-eJ-Ox9"/>

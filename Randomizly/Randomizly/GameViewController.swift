@@ -10,15 +10,25 @@ import UIKit
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var hintLabel: UILabel!
     @IBOutlet weak var inputField: UITextField!
     @IBAction func guess(_ sender: Any) {
         if let input = self.inputField.text, let number = Int(input) {
-            let correct = self.model.guess(number)
+            let result = self.model.guess(number)
             let tries = self.model.tries
-            if correct == true {
+            
+            switch result {
+            case .correct:
                 self.showAlert(title: "Victory!", message: "You guessed the number correctly! Tries needed: \(tries)")
+            case .tooHigh:
+                self.hintLabel.text = "Lower!"
+            case .tooLow:
+                self.hintLabel.text = "Higher!"
             }
-            print("Correct: \(correct), tries: \(tries)")
+            if result == .correct {
+                
+            }
+            print("Result: \(result), tries: \(tries)")
         } else {
             print("No input")
             self.showAlert(title: "Error", message: "Please enter a number!")
