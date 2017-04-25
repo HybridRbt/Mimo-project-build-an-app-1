@@ -44,14 +44,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm thinking of a number between 1 and 100. Can you guess it?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i72-Lz-7Bf">
+                                <rect key="frame" x="8" y="72" width="359" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="i72-Lz-7Bf" secondAttribute="trailing" constant="8" id="Mv7-gH-5AM"/>
                             <constraint firstItem="KEi-cW-lzq" firstAttribute="top" secondItem="dap-af-ilg" secondAttribute="bottom" constant="8" id="f3m-rY-MzV"/>
+                            <constraint firstItem="i72-Lz-7Bf" firstAttribute="top" secondItem="TXL-RW-t94" secondAttribute="bottom" constant="8" id="kaa-Ez-Mk4"/>
                             <constraint firstItem="dap-af-ilg" firstAttribute="centerX" secondItem="t5u-md-bPs" secondAttribute="centerX" id="ond-vU-BIV"/>
                             <constraint firstItem="KEi-cW-lzq" firstAttribute="centerX" secondItem="t5u-md-bPs" secondAttribute="centerX" id="ouF-08-iec"/>
                             <constraint firstItem="KEi-cW-lzq" firstAttribute="centerY" secondItem="t5u-md-bPs" secondAttribute="centerY" id="s2m-dw-MV1"/>
                             <constraint firstItem="E2F-it-QLu" firstAttribute="centerX" secondItem="t5u-md-bPs" secondAttribute="centerX" id="sCv-pr-iW2"/>
+                            <constraint firstItem="i72-Lz-7Bf" firstAttribute="leading" secondItem="t5u-md-bPs" secondAttribute="leading" constant="8" id="sGX-SN-5jm"/>
                             <constraint firstItem="dap-af-ilg" firstAttribute="top" secondItem="E2F-it-QLu" secondAttribute="bottom" constant="8" id="xD3-ZZ-pEi"/>
                         </constraints>
                     </view>
