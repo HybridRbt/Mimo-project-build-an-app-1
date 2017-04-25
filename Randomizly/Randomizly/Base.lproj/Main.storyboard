@@ -85,21 +85,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb2-ED-DpL">
-                                <rect key="frame" x="171" y="352" width="34" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Created by: J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mh6-dm-8zL">
+                                <rect key="frame" x="137" y="576" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="ZOo-z2-OiR">
+                                <rect key="frame" x="113" y="390" width="150" height="150"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb2-ED-DpL">
+                                <rect key="frame" x="170" y="287" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <segue destination="8S9-Hz-2uZ" kind="show" id="pJ3-eJ-Ox9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Randomizly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSY-SO-Dnf">
-                                <rect key="frame" x="148" y="309" width="89" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by: J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mh6-dm-8zL">
-                                <rect key="frame" x="137" y="626" width="102" height="21"/>
+                                <rect key="frame" x="144" y="231" width="89" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -111,7 +114,10 @@
                             <constraint firstItem="GSY-SO-Dnf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5n5-jX-Cmh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mh6-dm-8zL" secondAttribute="bottom" constant="20" id="Ihi-KB-wAX"/>
                             <constraint firstItem="fb2-ED-DpL" firstAttribute="top" secondItem="GSY-SO-Dnf" secondAttribute="bottom" constant="8" id="MfV-2A-qnR"/>
+                            <constraint firstItem="ZOo-z2-OiR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SDa-st-Z00"/>
+                            <constraint firstItem="mh6-dm-8zL" firstAttribute="top" secondItem="ZOo-z2-OiR" secondAttribute="bottom" constant="86" id="Spt-S3-jqJ"/>
                             <constraint firstItem="fb2-ED-DpL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YQL-vA-xun"/>
+                            <constraint firstItem="ZOo-z2-OiR" firstAttribute="top" secondItem="fb2-ED-DpL" secondAttribute="bottom" constant="8" id="nq3-uy-35W"/>
                             <constraint firstItem="GSY-SO-Dnf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uSV-Ys-n49"/>
                         </constraints>
                     </view>
@@ -140,4 +146,7 @@
             <point key="canvasLocation" x="93.599999999999994" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="150" height="150"/>
+    </resources>
 </document>
